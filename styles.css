@@ -13,17 +13,17 @@ body{
 }
 
 .titulo {
-    color: white;
+    color: #fff;
     font-size: 32px;
     font-family: 'Lemon', serif;
 }   
 
 .subtitulo {
-    color: white;
+    color: #fff ;
     font-size: 20px;
 }
 
-.tarjetas{
+.tarjetas, .tarjetas-ataques{
     display: flex;
     gap: 10px;
 }
@@ -38,7 +38,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white
+    color: #fff
 }
 
 .tarjeta-de-mokepon img {
@@ -57,10 +57,15 @@ body{
 }
 
 input {
-    display: none;
+   display: none;
+}
+
+input:checked + label {
+    background-color: #5D8BF4;
 }
 
 #seleccionar-ataque{
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -91,4 +96,28 @@ input {
     border: none;
     color: #11468F;
     font-family: 'Poppins', sans-serif; 
+}
+
+.ataques{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    color: #fff;
+}
+
+#vidas-jugador, #vidas-enemigo{
+    font-size: 32px;
+    margin-bottom:0
+}
+
+.ataques-jugador, .ataques-enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media (max-width:360px){
+    .tarjetas, .tarjetas-ataques{
+        flex-direction:  column;
+    }
 }
