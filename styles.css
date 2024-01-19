@@ -49,7 +49,7 @@ body{
     width: 180px;
     height: 40px;
     border-radius: 20px;
-    background: transparent;
+    background: 0 0;
     border: 2px solid white;
     color: white;
     font-family: 'Poppins', sans-serif;
@@ -118,6 +118,6 @@ input:checked + label {
 
 @media (max-width:360px){
     .tarjetas, .tarjetas-ataques{
-        flex-direction:  column;
+        flex-direction:  column
     }
 }
